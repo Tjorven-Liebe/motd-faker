@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'fuck.you.minecraft'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/io.netty/netty-all
+    implementation 'io.netty:netty-all:5.0.0.Alpha2'
+    implementation 'org.slf4j:slf4j-api:2.0.13'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'org.jetbrains:annotations:24.1.0'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+}
+
+test {
+    useJUnitPlatform()
+}
